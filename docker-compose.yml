@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  database:
+    image: postgres
+    container_name: database_example
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=henrique
+      - POSTGRES_PASSWORD=123456
+      - POSTGRES_DB=mydb
